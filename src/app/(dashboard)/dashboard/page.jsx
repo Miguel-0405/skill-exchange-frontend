@@ -14,6 +14,7 @@ export default function DashboardPage() {
       .get("/users/me/")
       .then(({ data }) => setUser(data))
       .catch(() => {
+        
         localStorage.removeItem("access_token")
         localStorage.removeItem("refresh_token")
         router.replace("/login")

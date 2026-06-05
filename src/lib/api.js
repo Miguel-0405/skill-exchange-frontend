@@ -1,7 +1,10 @@
 import axios from "axios"
 
+const baseURL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://apiskills.danidev.co/api"
+
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+  baseURL,
 })
 
 api.interceptors.request.use((config) => {

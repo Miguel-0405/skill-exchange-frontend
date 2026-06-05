@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { FormField, FormLabel, FormMessage } from "@/components/ui/form"
+import { Button } from "@/components/ui/Button"
+import { Input } from "@/components/ui/Input"
+import { FormField, FormLabel, FormMessage } from "@/components/ui/Form"
 import api from "@/lib/api"
 
 export default function LoginPage() {
